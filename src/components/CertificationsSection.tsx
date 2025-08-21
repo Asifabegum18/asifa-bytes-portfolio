@@ -49,18 +49,19 @@ const CertificationsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-section-bg">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-gradient-3 relative">
+      <div className="absolute inset-0 bg-pattern-dots opacity-25"></div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Certifications & Activities</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-cool mb-4">Certifications & Activities</h2>
+          <p className="text-lg text-primary-soft max-w-2xl mx-auto">
             Continuous learning and active participation in the tech community
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Certifications</h3>
+            <h3 className="text-2xl font-semibold text-sage mb-6">Certifications</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
                 <Card 
@@ -68,13 +69,13 @@ const CertificationsSection = () => {
                   className="border-0 shadow-md bg-card hover:shadow-lg transition-all duration-300"
                 >
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-foreground">{cert.title}</CardTitle>
-                    <p className="text-primary font-medium">{cert.provider}</p>
+                    <CardTitle className="text-lg text-secondary-soft">{cert.title}</CardTitle>
+                    <p className="text-accent-soft font-medium">{cert.provider}</p>
                   </CardHeader>
                   <CardContent>
                     <Badge 
                       variant="secondary"
-                      className="bg-skill-bg text-foreground"
+                      className="bg-skill-bg text-warm"
                     >
                       {cert.category}
                     </Badge>
@@ -85,7 +86,7 @@ const CertificationsSection = () => {
           </div>
           
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Activities</h3>
+            <h3 className="text-2xl font-semibold text-cool mb-6">Activities</h3>
             <Card className="border-0 shadow-lg bg-card">
               <CardContent className="p-6">
                 <div className="space-y-4">
@@ -95,7 +96,7 @@ const CertificationsSection = () => {
                       className="flex items-center space-x-3 p-3 rounded-lg bg-skill-bg/50 hover:bg-accent/50 transition-colors duration-200"
                     >
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground font-medium">{activity}</span>
+                      <span className="text-primary-soft font-medium">{activity}</span>
                     </div>
                   ))}
                 </div>

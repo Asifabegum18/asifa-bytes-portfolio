@@ -36,11 +36,12 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-gradient-2 relative">
+      <div className="absolute inset-0 bg-pattern-dots opacity-20"></div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-warm mb-4">Projects</h2>
+          <p className="text-lg text-sage max-w-2xl mx-auto">
             A showcase of my work in AI, Machine Learning, and Web Development
           </p>
         </div>
@@ -53,14 +54,14 @@ const ProjectsSection = () => {
             >
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-lg text-foreground">{project.title}</CardTitle>
-                  <Badge variant="outline" className="text-xs text-primary border-primary">
+                  <CardTitle className="text-lg text-primary-soft">{project.title}</CardTitle>
+                  <Badge variant="outline" className="text-xs text-secondary-soft border-secondary-soft">
                     {project.category}
                   </Badge>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-accent-soft text-sm leading-relaxed">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -68,7 +69,7 @@ const ProjectsSection = () => {
                     <Badge 
                       key={tech} 
                       variant="secondary"
-                      className="bg-skill-bg text-foreground text-xs"
+                      className="bg-skill-bg text-warm text-xs"
                     >
                       {tech}
                     </Badge>
