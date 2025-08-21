@@ -65,7 +65,19 @@ export default {
 				'section-bg': 'hsl(var(--section-bg))',
 				'skill-bg': 'hsl(var(--skill-bg))',
 				'card-hover': 'hsl(var(--card-hover))',
-				'text-subtle': 'hsl(var(--text-subtle))'
+				'text-subtle': 'hsl(var(--text-subtle))',
+				'text-primary-soft': 'hsl(var(--text-primary-soft))',
+				'text-secondary-soft': 'hsl(var(--text-secondary-soft))',
+				'text-accent-soft': 'hsl(var(--text-accent-soft))',
+				'text-warm': 'hsl(var(--text-warm))',
+				'text-cool': 'hsl(var(--text-cool))',
+				'text-sage': 'hsl(var(--text-sage))'
+			},
+			backgroundImage: {
+				'gradient-1': 'var(--bg-gradient-1)',
+				'gradient-2': 'var(--bg-gradient-2)',
+				'gradient-3': 'var(--bg-gradient-3)',
+				'pattern-dots': 'var(--bg-pattern-dots)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

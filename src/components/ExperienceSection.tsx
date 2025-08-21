@@ -29,11 +29,12 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-section-bg">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-gradient-1 relative">
+      <div className="absolute inset-0 bg-pattern-dots opacity-25"></div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Experience</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-secondary-soft mb-4">Experience</h2>
+          <p className="text-lg text-warm max-w-2xl mx-auto">
             Practical experience gained through internships at leading tech companies
           </p>
         </div>
@@ -45,14 +46,14 @@ const ExperienceSection = () => {
               className="border-0 shadow-lg bg-card hover:shadow-xl hover:bg-card-hover transition-all duration-300 transform hover:-translate-y-1"
             >
               <CardHeader>
-                <CardTitle className="text-xl text-foreground">{exp.company}</CardTitle>
+                <CardTitle className="text-xl text-primary-soft">{exp.company}</CardTitle>
                 <div className="flex justify-between items-center">
-                  <span className="text-primary font-medium">{exp.type}</span>
-                  <span className="text-text-subtle text-sm">{exp.period}</span>
+                  <span className="text-secondary-soft font-medium">{exp.type}</span>
+                  <span className="text-sage text-sm">{exp.period}</span>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{exp.description}</p>
+                <p className="text-cool">{exp.description}</p>
               </CardContent>
             </Card>
           ))}

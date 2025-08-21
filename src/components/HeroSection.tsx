@@ -3,17 +3,18 @@ import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-accent/10 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-1 bg-pattern-dots relative overflow-hidden px-6">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10"></div>
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold text-primary-soft">
               Asifa Begum M
             </h1>
-            <p className="text-xl md:text-2xl text-primary font-medium">
+            <p className="text-xl md:text-2xl text-secondary-soft font-medium">
               AI & Data Science Student
             </p>
-            <p className="text-lg text-muted-foreground max-w-lg">
+            <p className="text-lg text-accent-soft max-w-lg leading-relaxed">
               Passionate about Artificial Intelligence, Machine Learning, and Full Stack Development with a CGPA of 9.27
             </p>
           </div>
